@@ -1,0 +1,102 @@
+{
+  "consumer": {
+    "name": "Zoo App"
+  },
+  "provider": {
+    "name": "Animal Service"
+  },
+  "interactions": [
+    {
+      "description": "a request for an alligator",
+      "provider_state": "an alligator exists",
+      "request": {
+        "method": "get",
+        "path": "/alligator",
+        "query": ""
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "name": "Betty"
+        }
+      }
+    },
+    {
+      "description": "a request for an alligator specie",
+      "request": {
+        "method": "get",
+        "path": "/alligator",
+        "query": ""
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "name": "Betty",
+          "specie": "Crocodilus"
+        }
+      }
+    },
+    {
+      "description": "a request for an alligator",
+      "provider_state": "There's no alligator",
+      "request": {
+        "method": "get",
+        "path": "/alligator",
+        "query": ""
+      },
+      "response": {
+        "status": 404,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "name": "null"
+        }
+      }
+    },
+    {
+      "description": "a POST request for a new animal",
+      "provider_state": "There's no alligator yet",
+      "request": {
+        "method": "post",
+        "path": "/alligator",
+        "query": ""
+      },
+      "response": {
+        "status": 201,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "name": "Teddy"
+        }
+      }
+    },
+    {
+      "description": "a PUT request for a new animal",
+      "request": {
+        "method": "put",
+        "path": "/alligator",
+        "query": ""
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "name": "James"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecificationVersion": "1.0.0"
+  }
+}
