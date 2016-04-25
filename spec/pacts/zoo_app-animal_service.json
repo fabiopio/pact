@@ -26,6 +26,7 @@
     },
     {
       "description": "a request for an alligator specie",
+      "provider_state": "an alligator exists",
       "request": {
         "method": "get",
         "path": "/alligator",
@@ -62,7 +63,7 @@
     },
     {
       "description": "a POST request for a new animal",
-      "provider_state": "There's no alligator yet",
+      "provider_state": "A new animal needs to be created",
       "request": {
         "method": "post",
         "path": "/alligator",
@@ -79,7 +80,8 @@
       }
     },
     {
-      "description": "a PUT request for a new animal",
+      "description": "a PUT request an animal",
+      "provider_state": "An animal needs to be changed",
       "request": {
         "method": "put",
         "path": "/alligator",
