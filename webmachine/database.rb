@@ -25,6 +25,11 @@ class ZooDB
 		@animals.delete
 	end
 
+	def next_id
+		last = @animals.order(:id).last
+
+		last.nil? ? 0 : last.id + 1
+	end
 end
 
 ZOO_DB = ZooDB.new

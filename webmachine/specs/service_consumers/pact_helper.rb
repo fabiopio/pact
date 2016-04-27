@@ -1,6 +1,5 @@
 # In specs/service_consumers/pact_helper.rb
 require 'pact/provider/rspec'
-require_relative '../../server.rb'
 require_relative 'provider_states'
 
 Pact.service_provider "Animal Service" do

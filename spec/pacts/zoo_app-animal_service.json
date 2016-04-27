@@ -44,30 +44,15 @@
       }
     },
     {
-      "description": "a request for an alligator",
-      "provider_state": "There's no alligator",
-      "request": {
-        "method": "get",
-        "path": "/alligator",
-        "query": ""
-      },
-      "response": {
-        "status": 404,
-        "headers": {
-          "Content-Type": "application/json"
-        },
-        "body": {
-          "name": "null"
-        }
-      }
-    },
-    {
       "description": "a POST request for a new animal",
       "provider_state": "A new animal needs to be created",
       "request": {
         "method": "post",
         "path": "/alligator",
-        "query": ""
+        "query": "",
+        "headers": {
+          "Content-Type": "application/json"
+        }
       },
       "response": {
         "status": 201,
@@ -76,24 +61,6 @@
         },
         "body": {
           "name": "Teddy"
-        }
-      }
-    },
-    {
-      "description": "a PUT request an animal",
-      "provider_state": "An animal needs to be changed",
-      "request": {
-        "method": "put",
-        "path": "/alligator",
-        "query": ""
-      },
-      "response": {
-        "status": 200,
-        "headers": {
-          "Content-Type": "application/json"
-        },
-        "body": {
-          "name": "James"
         }
       }
     }

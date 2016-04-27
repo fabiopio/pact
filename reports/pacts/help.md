@@ -1,10 +1,10 @@
 # For assistance debugging failures
 
 * The pact files have been stored locally in the following temp directory:
-    /Users/fpio/Documents/pact-example/tmp/pacts
+    /Users/fpio/Documents/webmachine/tmp/pacts
 
 * The requests and responses are logged in the following log file:
-    /Users/fpio/Documents/pact-example/log/pact.log
+    /Users/fpio/Documents/webmachine/log/pact.log
 
 * Add BACKTRACE=true to the `rake pact:verify` command to see the full backtrace
 
