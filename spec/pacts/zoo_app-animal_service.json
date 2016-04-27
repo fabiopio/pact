@@ -42,27 +42,6 @@
           "specie": "Crocodilus"
         }
       }
-    },
-    {
-      "description": "a POST request for a new animal",
-      "provider_state": "A new animal needs to be created",
-      "request": {
-        "method": "post",
-        "path": "/alligator",
-        "query": "",
-        "headers": {
-          "Content-Type": "application/json"
-        }
-      },
-      "response": {
-        "status": 201,
-        "headers": {
-          "Content-Type": "application/json"
-        },
-        "body": {
-          "name": "Teddy"
-        }
-      }
     }
   ],
   "metadata": {

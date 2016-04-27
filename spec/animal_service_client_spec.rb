@@ -40,21 +40,5 @@ describe AnimalServiceClient, :pact => true do
       expect(subject.get_alligator_specie).to eq(Alligator.new('Crocodilus'))
     end
   end
-
-  describe "post_alligator" do
-    before do
-      animal_service.given("A new animal needs to be created").
-      upon_receiving("a POST request for a new animal").
-        with(method: :post, path: '/alligator', query: '', headers: {'Content-Type' => 'application/json'}).
-        will_respond_with(
-          status: 201,
-          headers: {'Content-Type' => 'application/json'}, 
-          body: {name: 'Teddy'} )
-    end
-
-    it "return a new alligator" do
-      expect(subject.post_alligator).to eq(Alligator.new('Teddy'))
-    end
-  end
   
 end

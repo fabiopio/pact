@@ -13,10 +13,5 @@ class AnimalServiceClient
 		specie = JSON.parse(self.class.get("/alligator").body)['specie']
 		 Alligator.new(specie)
 	end
-
-	def post_alligator
-		name = JSON.parse(self.class.post("/alligator", headers: {"Content-Type" => "application/json"}).body)['name']
-		Alligator.new(name)
-	end
 	
 end
